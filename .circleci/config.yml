@@ -1,0 +1,14 @@
+version: 2.1
+jobs:
+  compile:
+   docker:
+      - image: fadlyas/kernel_dockerfile:latest
+   steps:
+      - run:
+          command: |
+           git clone https://github.com/PETRIK-CROT/android_kernel_realme_sdm710
+workflows:
+  version: 2.1
+  cooking:
+    jobs:
+      - compile
