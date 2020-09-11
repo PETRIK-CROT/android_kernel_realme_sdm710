@@ -6,7 +6,10 @@ jobs:
    steps:
       - run:
           command: |
-           git clone https://github.com/PETRIK-CROT/android_kernel_realme_sdm710
+           apt install default-jre -y
+           apt install nano -y
+           apt install flex -y
+           git clone https://github.com/PETRIK-CROT/android_kernel_realme_sdm710 ~/petrik
 workflows:
   version: 2.1
   cooking:
