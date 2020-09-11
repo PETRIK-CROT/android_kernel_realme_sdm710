@@ -6,6 +6,7 @@ jobs:
    steps:
       - run:
           command: |
+           apt-get update -y
            apt install default-jre -y
            apt install nano -y
            apt install flex -y
